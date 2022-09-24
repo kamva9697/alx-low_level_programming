@@ -5,9 +5,9 @@
  *
  * @str: string to count
  *
- * Return: zero for success.
+ * Return: return string length
  */
-int _strlen(const char *str)
+int _strlen(char *str)
 {
 	int i = 0;
 
