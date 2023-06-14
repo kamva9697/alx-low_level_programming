@@ -3,10 +3,11 @@
 /**
  * reset_to_98 - resets a pointer to an int to 98
  *
- * @ptr: pointer to int
+ * @n: pointer to int
  *
+ * Returns: nothing
  */
-void reset_to_98(int *ptr)
+void reset_to_98(int *n)
 {
-	*ptr = 98;
+	*n = 98;
 }
