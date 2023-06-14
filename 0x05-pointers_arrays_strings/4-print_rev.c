@@ -5,7 +5,6 @@
  *
  * @s: string to reverse
  *
- *
  * Return: void
  */
 void print_rev(char *s)
@@ -21,4 +20,5 @@ void print_rev(char *s)
 	{
 		_putchar(s[i]);
 	}
+	_putchar('\n');
 }
