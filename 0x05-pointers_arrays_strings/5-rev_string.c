@@ -11,15 +11,21 @@ void rev_string(char *s)
 {
 	int sz;
 	int i;
+	int j;
 
 	sz = 0;
 	while (s[sz] != '\0')
 		sz++;
 
-	for (i = sz; i >= 0; i--)
+	j = sz - 1;
+	for (i = 0; i < j;)
 	{
-		_putchar(s[i]);
+		char temp = s[i];
+
+		s[i] = s[j];
+		s[j] = temp;
+		i++;
+		j--;
 	}
-	_putchar('\n');
 }
 
