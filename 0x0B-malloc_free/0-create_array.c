@@ -15,6 +15,7 @@ char *create_array(unsigned int size, char c)
 	char *buffer;
 
 	buffer = (char *) malloc(size);
+	if (buffer == NULL) return NULL;
 
 	for (i = 0; i < size; i++)
 	{
